@@ -1,0 +1,34 @@
+.m-item{
+    color: #fff
+}
+.ant-layout-header{
+    background: inherit
+}
+.ant-menu-item{
+    display: flex;
+    align-items: center;
+}
+.m-head{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 100px;
+}
+.m-head .u-item{
+    display: flex;
+    align-items: center;
+}
+.g-header{
+    display: flex;
+    padding: 0;
+    background: #fff;
+    border-bottom: 1px solid #ededed;
+}
+.g-header .m-head{
+    flex-grow: 1;
+    border: none
+}
+
+.g-header .m-title{
+    padding-left: 100px;
+}
