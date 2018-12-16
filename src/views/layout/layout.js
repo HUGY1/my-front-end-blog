@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd'
 import Header from '../header/header'
-import { Route , HashRouter, BrowserRouter} from "react-router-dom";
+import { Route , BrowserRouter} from "react-router-dom";
 // 路由页面
 import Detail from '../article/detail'
 import ArticleList from '../article/list'
