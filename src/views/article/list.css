@@ -1,0 +1,20 @@
+
+.m-item{
+    height: 48px;
+    line-height: 48px;
+    color: #333;
+    padding: 0 20px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+    transition: background .3s;
+    background: #fff;
+}
+.m-item:hover{
+    background: #ededed
+}
+.m-item:active{
+    background: #999
+}
+.m-title{
+    text-align: left;
+}
