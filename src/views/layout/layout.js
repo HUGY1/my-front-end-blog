@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd'
 import Header from '../header/header'
-import { Route , BrowserRouter} from "react-router-dom";
+import { Route , HashRouter} from "react-router-dom";
 import './layout.css'
 // 路由页面
 import Detail from '../article/detail'
@@ -9,7 +9,7 @@ import ArticleList from '../article/list'
 class layout extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <Layout>
                     <Header></Header>
                     <Layout className='m-main'>
@@ -18,7 +18,7 @@ class layout extends Component {
                     </Layout>
 
                 </Layout>
-            </BrowserRouter>
+            </HashRouter>
 
         )
     }
