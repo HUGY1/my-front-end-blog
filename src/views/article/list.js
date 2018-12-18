@@ -11,9 +11,9 @@ class ArticleList extends Component {
     }
 
     componentDidMount() {
-        // 452d304c0aab88403202651a261552e168bccb7b
+        // 551d1771cacc3912540d7563f521ab131be5a466
         //  https://api.github.com https://api.github.com/issues
-        axios.get('https://api.github.com/repos/HUGY1/my-front-end-blog/issues?access_token=452d304c0aab88403202651a261552e168bccb7b').then(res => {
+        axios.get('https://api.github.com/repos/HUGY1/my-front-end-blog/issues?access_token=551d1771cacc3912540d7563f521ab131be5a466').then(res => {
             this.setState({
                 articleList: res.data
             })
