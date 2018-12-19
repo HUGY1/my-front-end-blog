@@ -8,25 +8,13 @@ class ArticleList extends Component {
         this.state = {
             articleList: []
         }
-
-        this.code = getQuery('code')
-        function getQuery(name) {
-            let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-            let r = props.location.search.substr(1).match(reg);
-            if (r !== null) return unescape(r[2]);
-            return null;
-        }
     }
 
     componentDidMount() {
-        let _this = this
-        console.log(_this.code)
-        axios.post('https://github.com/login/oauth/access_token', {
-            'client_id': '75269a7abb6d1982a49e',
-            'client_secret': '596001e772342f0bd84a8c9d0becc62df5be1aba',
-            'code': _this.code
-        }).then(res => {
-            console.log(res)
+        axios.get('https://api.github.com/repos/HUGY1/my-front-end-blog/issues').then(res => {
+            this.setState({
+                articleList: res.data
+            })
         })
     }
 
