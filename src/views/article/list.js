@@ -16,7 +16,7 @@ class ArticleList extends Component {
         axios.get('https://api.github.com/repos/HUGY1/my-front-end-blog/issues?access_token=18688d890eed8e164f69428882fbe45c92773002').then(res => {
             this.setState({
                 articleList: res.data
-            })
+            }) 
         })
     }
 
