@@ -19,10 +19,12 @@ class ArticleList extends Component {
     }
 
     componentDidMount() {
+        let _this = this
+        console.log(_this.code)
         axios.post('https://github.com/login/oauth/access_token', {
             'client_id': '75269a7abb6d1982a49e',
             'client_secret': '596001e772342f0bd84a8c9d0becc62df5be1aba',
-            'code': this.code
+            'code': _this.code
         }).then(res => {
             console.log(res)
         })
