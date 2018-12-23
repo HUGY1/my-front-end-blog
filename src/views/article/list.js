@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'antd'
 import './list.css'
 import axios from 'axios'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 class ArticleList extends Component {
     constructor(props) {
         super(props)
@@ -22,7 +22,7 @@ class ArticleList extends Component {
     render() {
         function List(props) {
             let list = props.group.map(item =>
-                <NavLink to={`/article/detail`} key={item.id} >
+                <Link to={`/article/detail/${item.number}`} key={item.id} >
                     <Row className='m-item' gutter={0}>
                         <Col span={16} className='m-title'>
                             {item.title}
@@ -31,7 +31,7 @@ class ArticleList extends Component {
                             {item.created_at}
                         </Col>
                     </Row>
-                </NavLink>
+                </Link>
 
             )
             return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd'
 import Header from '../header/header'
-import { Route, HashRouter } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 // import { IndexRoute } from 'react-router'
 import './layout.css'
 // 路由页面
@@ -10,17 +10,17 @@ import ArticleList from '../article/list'
 class layout extends Component {
     render() {
         return (
-            <HashRouter>
+            <Router>
                 <Layout>
                     <Header></Header>
                     <Layout className='m-main'>
                         {/* <IndexRoute component={ArticleList} /> */}
                         <Route path="/article/list" component={ArticleList} />
-                        <Route path="/article/detail" component={Detail} />
+                        <Route path="/article/detail/:number" component={Detail} />
                     </Layout>
 
                 </Layout>
-            </HashRouter>
+            </Router>
 
         )
     }
