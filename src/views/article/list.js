@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'antd'
 import './list.css'
 import axios from 'axios'
+import { NavLink } from 'react-router-dom'
 class ArticleList extends Component {
     constructor(props) {
         super(props)
@@ -18,19 +19,20 @@ class ArticleList extends Component {
         })
     }
 
-   
     render() {
         function List(props) {
-            console.log(props)
-            let list = props.group.map(item => 
-                <Row className='m-item' gutter={0} key={item.id}>
-                    <Col span={16} className='m-title'>
-                        {item.title}
-                    </Col>
-                    <Col span={8} className='m-date'>
-                        {item.created_at}
-                    </Col>
-                </Row>
+            let list = props.group.map(item =>
+                <NavLink to={`/article/detail`} key={item.id} >
+                    <Row className='m-item' gutter={0}>
+                        <Col span={16} className='m-title'>
+                            {item.title}
+                        </Col>
+                        <Col span={8} className='m-date'>
+                            {item.created_at}
+                        </Col>
+                    </Row>
+                </NavLink>
+
             )
             return (
                 <div>

@@ -25,9 +25,8 @@ class Header extends Component {
                     onClick={this.handleClick}
                     selectedKeys={[this.state.current]}
                     mode="horizontal">
-                    <Menu.Item className='u-item' key="mail"><NavLink to="/article/detail"><Icon type="solution" />我的文章</NavLink></Menu.Item>
-                    <Menu.Item className='u-item' key="app"><NavLink to="/article/list"><Icon type="appstore" />心情</NavLink></Menu.Item>
-                    <Menu.Item className='u-item' key="alipay"><NavLink to="/profile"><Icon type="user" />关于我</NavLink></Menu.Item>
+                    <Menu.Item className='u-item' key="mail"><NavLink to="/article/list"><Icon type="solution" />我的文章</NavLink></Menu.Item>
+                    <Menu.Item className='u-item' key="alipay"><NavLink to="/article/detail"><Icon type="user" />关于我</NavLink></Menu.Item>
                 </Menu>
             </Layout.Header>
 

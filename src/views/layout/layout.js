@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd'
 import Header from '../header/header'
-import { Route , HashRouter} from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
+// import { IndexRoute } from 'react-router'
 import './layout.css'
 // 路由页面
 import Detail from '../article/detail'
@@ -13,8 +14,9 @@ class layout extends Component {
                 <Layout>
                     <Header></Header>
                     <Layout className='m-main'>
-                        <Route path="/article/detail" component={Detail} />
+                        {/* <IndexRoute component={ArticleList} /> */}
                         <Route path="/article/list" component={ArticleList} />
+                        <Route path="/article/detail" component={Detail} />
                     </Layout>
 
                 </Layout>
