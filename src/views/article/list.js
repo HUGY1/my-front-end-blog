@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd'
+import { Row, Col, } from 'antd'
 import './list.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { Skeleton } from 'antd'
 class ArticleList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            articleList: []
+            articleList: [],
+            loading: true
         }
     }
 
     componentDidMount() {
         axios.get('https://api.github.com/repos/HUGY1/my-front-end-blog/issues').then(res => {
             this.setState({
-                articleList: res.data
+                articleList: res.data,
+                loading: false
             })
         })
     }
@@ -41,7 +44,10 @@ class ArticleList extends Component {
             )
         }
         return (
-            <List group={this.state.articleList} />
+            <Skeleton loading={this.state.loading} title={false} paragraph={{ rows: 5,width: ['100%'] }}>
+                <List group={this.state.articleList} />
+            </Skeleton>
+
         )
     }
 

@@ -12,7 +12,7 @@ class Header extends Component {
         console.log(props)
     }
     state = {
-        current: 'index',
+        current: 'article',
     }
 
 
@@ -29,9 +29,9 @@ class Header extends Component {
                     onClick={this.handleClick}
                     selectedKeys={[this.state.current]}
                     mode="horizontal">
-                    <Menu.Item className='u-item' key="index"><NavLink to="/"><Icon type="solution" />首页</NavLink></Menu.Item>
-                    <Menu.Item className='u-item' key="mail"><NavLink to="/article/list"><Icon type="solution" />我的文章</NavLink></Menu.Item>
-                    <Menu.Item className='u-item' key="alipay"><NavLink to="/article/detail"><Icon type="user" />关于我</NavLink></Menu.Item>
+                    {/* <Menu.Item className='u-item' key="index"><NavLink to="/"><Icon type="solution" />首页</NavLink></Menu.Item> */}
+                    <Menu.Item className='u-item' key="article"><NavLink to="/"><Icon type="solution" />我的文章</NavLink></Menu.Item>
+                    <Menu.Item className='u-item' key="about"><NavLink to="/article/detail"><Icon type="user" />关于我</NavLink></Menu.Item>
                 </Menu>
             </Layout.Header>
 

@@ -2,7 +2,7 @@
     height: calc( 100vh - 84px);
     width: 960px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     background: #fff;
     overflow-y: scroll;
 }

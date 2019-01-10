@@ -14,8 +14,9 @@ class layout extends Component {
                 <Layout>
                     <Header></Header>
                     <Layout className='m-main'>
-                        {/* <IndexRoute component={ArticleList} /> */}
-                        <Route path="/article/list" component={ArticleList} />
+                        <Route path="/" exact component={ArticleList}>
+                            
+                        </Route>
                         <Route path="/article/detail/:number" component={Detail} />
                     </Layout>
 
