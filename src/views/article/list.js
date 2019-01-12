@@ -25,7 +25,7 @@ class ArticleList extends Component {
     render() {
         function List(props) {
             let list = props.group.map(item =>
-                <Link to={`/my-front-end-blog//article/detail/${item.number}`} key={item.id} >
+                <Link to={`/article/detail/${item.number}`} key={item.id} >
                     <Row className='m-item' gutter={0}>
                         <Col span={16} className='m-title'>
                             {item.title}
