@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd'
 import Header from '../header/header'
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, HashRouter as Router } from "react-router-dom";
 // import { IndexRoute } from 'react-router'
 import './layout.css'
 // 路由页面
