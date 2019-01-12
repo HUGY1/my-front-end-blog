@@ -14,10 +14,10 @@ class layout extends Component {
                 <Layout>
                     <Header></Header>
                     <Layout className='m-main'>
-                        <Route path="/" exact component={ArticleList}>
+                        <Route path="/my-front-end-blog/" exact component={ArticleList}>
                             
                         </Route>
-                        <Route path="/article/detail/:number" component={Detail} />
+                        <Route path="/my-front-end-blog//article/detail/:number" component={Detail} />
                     </Layout>
 
                 </Layout>

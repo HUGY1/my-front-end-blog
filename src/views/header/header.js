@@ -30,8 +30,8 @@ class Header extends Component {
                     selectedKeys={[this.state.current]}
                     mode="horizontal">
                     {/* <Menu.Item className='u-item' key="index"><NavLink to="/"><Icon type="solution" />首页</NavLink></Menu.Item> */}
-                    <Menu.Item className='u-item' key="article"><NavLink to="/"><Icon type="solution" />我的文章</NavLink></Menu.Item>
-                    <Menu.Item className='u-item' key="about"><NavLink to="/article/detail"><Icon type="user" />关于我</NavLink></Menu.Item>
+                    <Menu.Item className='u-item' key="article"><NavLink to="/my-front-end-blog/"><Icon type="solution" />我的文章</NavLink></Menu.Item>
+                    <Menu.Item className='u-item' key="about"><NavLink to="/my-front-end-blog//article/detail"><Icon type="user" />关于我</NavLink></Menu.Item>
                 </Menu>
             </Layout.Header>
 
