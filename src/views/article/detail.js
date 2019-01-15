@@ -30,6 +30,8 @@ class Detail extends Component {
                 <article dangerouslySetInnerHTML={{__html: this.state.body}}></article>
                 <p>更新时间：{this.state.updated_at}</p>
                 <a href={this.state.html_url} target='_blank' rel="noopener noreferrer">前往issue</a>
+                <div className='m-comment'>
+                </div>
             </div>
         )
     }
