@@ -50,7 +50,6 @@ class ArticleList extends Component {
 
         )
     }
-
 }
 
 export default ArticleList
