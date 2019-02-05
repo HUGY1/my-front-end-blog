@@ -6,3 +6,9 @@
     background: #fff;
     overflow-y: scroll;
 }
+@media screen and (max-width: 414px) {
+    .m-main{
+        width: 100%;
+        height: auto;
+    }
+}

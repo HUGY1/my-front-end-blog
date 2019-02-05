@@ -24,7 +24,7 @@ class Header extends Component {
     render() {
         return (
             <Layout.Header className='g-header'>
-                <h1 className='m-title'>Welcome to my Blog</h1>
+                <h1 className='m-title u-logo'>Welcome to my Blog</h1>
                 <Menu className='m-head'
                     onClick={this.handleClick}
                     selectedKeys={[this.state.current]}

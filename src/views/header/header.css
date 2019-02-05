@@ -32,3 +32,13 @@
 .g-header .m-title{
     padding-left: 100px;
 }
+
+@media screen and (max-width: 414px) {
+    .u-logo{
+        display: none
+    }
+    .m-head{
+        padding:  0;
+        justify-content: center;
+    }
+}

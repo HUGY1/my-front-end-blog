@@ -18,3 +18,11 @@
 .m-title{
     text-align: left;
 }
+@media screen and (max-width: 414px) {
+    .m-date{
+        display: none
+    }
+    .m-item{
+        height: auto;
+    }
+}
