@@ -30,7 +30,7 @@ class ArticleList extends Component {
                         <Col span={16} className='m-title' xs={24}>
                             {item.title}
                         </Col>
-                        <Col span={8} className='m-date'>
+                        <Col span={8} className='m-date' xs={0}>
                             {item.created_at}
                         </Col>
                     </Row>
