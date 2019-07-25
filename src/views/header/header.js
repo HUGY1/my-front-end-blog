@@ -2,21 +2,32 @@ import React, { Component } from 'react'
 import './header.css';
 import { Layout, Menu, Icon } from 'antd'
 import {
-    NavLink
+    NavLink,
+    withRouter
 } from "react-router-dom";
 
 class Header extends Component {
-    constructor(props){
-        
+    constructor(props) {
+
         super(props);
-        this.state={
-            current: 'article'
+        this.state = {
+            current: ''
         }
-   
-    }   
-  
-    componentDidMount(){
-        console.log(this.props)
+
+    }
+
+    componentDidMount() {
+        let name = this.props.location.pathname.substr(1)
+        console.log(name)
+        if (name === 'about') {
+            this.setState({
+                current:'about',
+            });
+        } else {
+            this.setState({
+                current:'article',
+            });
+        }
     }
 
     handleClick = (e) => {
@@ -44,4 +55,4 @@ class Header extends Component {
 
 }
 
-export default Header
+export default withRouter(Header)

@@ -9,16 +9,6 @@ import Detail from '../article/detail'
 import About from '../about/about'
 import ArticleList from '../article/list'
 class layout extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-       
-    }
-
-    componentWillMount(){
-        console.log(this.props)
-    }
-
     render() {
         return (
             <Router>
