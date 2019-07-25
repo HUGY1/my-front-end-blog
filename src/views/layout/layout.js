@@ -6,18 +6,28 @@ import { Route, HashRouter as Router } from "react-router-dom";
 import './layout.css'
 // 路由页面
 import Detail from '../article/detail'
+import About from '../about/about'
 import ArticleList from '../article/list'
 class layout extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {}
+       
+    }
+
+    componentWillMount(){
+        console.log(this.props)
+    }
+
     render() {
         return (
             <Router>
                 <Layout>
                     <Header></Header>
                     <Layout className='m-main'>
-                        <Route path="/" exact component={ArticleList}>
-                            
-                        </Route>
+                        <Route path="/" exact component={ArticleList} />
                         <Route path="/article/detail/:number" component={Detail} />
+                        <Route path="/about" component={About} />
                     </Layout>
 
                 </Layout>
