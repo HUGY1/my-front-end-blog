@@ -75,7 +75,7 @@
   ],
   "homepage": "https://hugy1.github.io/my-front-end-blog/",
   "devDependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.0.1"
   },
   "jest": {
